@@ -215,26 +215,33 @@ a:after {
 	color: white;
 }
 
-#footwrap {
-	background: #2f2f2f;
+#blogwrap {
+	background: #2c3e50;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color: white;
+}
+
+#blogwrap h5, p {
+	color: white;
+}
+
+.footwrap {	
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
-#footwrap p {
-	color: white;
+
+
+#intro h5, p {
+    color: white;
 }
 
-#footwrap h5 {
-	color: white;
-}
-
-
-#footwrap t {
+.footwrap t {
 	font-weight: 700;
 }
 
-#footwrap i {
+.footwrap i {
 	padding-right: 8px;
 	color: #1abc9c;
 }
@@ -278,6 +285,9 @@ a:after {
 	color: #95a5a6;
 }
 
+.footwrap  p {
+    color: #333; 
+}
 
 sm {
 	font-size: 12px;
