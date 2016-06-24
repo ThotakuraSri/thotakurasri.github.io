@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Techno Junkie</title>
+    <title>Techno Junkie - The Three Dots</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -49,7 +49,10 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">                    
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+					<a  href="index.html">Home</a>                        
+                    </li>                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -59,58 +62,60 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+    <header class="intro-header" style="background-image: url('img/js-the-3-dots.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>Techno Junkie</h1>
-                        <hr class="small">
-                        <span class="subheading">A Technology Blog by Sri Thotakura</span>
+                    <div class="post-heading">
+                        <h1>JS - The three dots</h1>
+                        <h2 class="subheading"> Let the arguments flow</h2>
+                        <span class="meta">Posted by <a href="#">Sri Thotakura</a> on June 23, 2016</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview">
-                    <a href="java-8-stringjoiner.html">
-                        <h2 class="post-title">
-                            StringJoiner
-                        </h2>
-                        <h3 class="post-subtitle">
-                            An old timer in new suit
-                        </h3>
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p><b>The rest operator</b> is used to get the arguments list passed to function on invocation.</p>
+
+                    					
+					<blockquote>function countArguments(...args) {  <br/>
+								   return args.length;<br/>
+								}<br/>
+								// get the number of arguments<br/>
+								countArguments('welcome', 'to', 'Earth'); // => 3<br/>
+					</blockquote>
+					<p><b>The spread operator</b> is used for array construction and destructuring, and to fill function arguments from an array on invocation.</p>
+					<blockquote>	let cold = ['autumn', 'winter'];  <br/>
+									let warm = ['spring', 'summer'];  <br/>
+									// construct an array
+									[...cold, ...warm] // => ['autumn', 'winter', 'spring', 'summer']<br/>
+									// destructure an array<br/>
+									let otherSeasons, autumn;  <br/>
+									[autumn, ...otherSeasons] = cold;<br/>
+									otherSeasons      // => ['winter']  <br/>
+									// function arguments from an array<br/>
+									cold.push(...warm);  <br/>
+									cold              // => ['autumn', 'winter', 'spring', 'summer']<br/>
+					</blockquote>
+
+                    <!--h2 class="section-heading">Reaching for the Stars</h2-->
+
+                    
+                    <!--a href="#">
+                        <img class="img-responsive" src="img/post-sample-image.jpg" alt="">
                     </a>
-                    <p class="post-meta">Posted by <a href="http://www.thotakurasri.com">Sri Thotakura</a> on June 23, 2016</p>
+                    <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span-->
+                    
                 </div>
-                <hr>
-				<div class="post-preview">
-                    <a href="js-the-3-dots.html">
-                        <h2 class="post-title">
-                            The three dots
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Let the arguments flow
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="http://www.thotakurasri.com">Sri Thotakura</a> on June 23, 2016</p>
-                </div>
-                <hr>
-                
-                <!-- Pager -->
-                <ul class="pager">
-                    <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
-                    </li>
-                </ul>
             </div>
         </div>
-    </div>
+    </article>
 
     <hr>
 
